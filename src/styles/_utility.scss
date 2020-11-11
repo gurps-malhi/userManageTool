@@ -14,7 +14,23 @@
 .btn-rounded{
     border:3px solid $primary;
     border-radius:20px;
+    transition-duration: 0.6s;
+    &:hover{
+        background-color:$primary-bg;
+        color:#fff;     
+    }
 }
+
+.btn-rounded.primary-bg{
+        transition-duration: 0.6s;
+        &:hover{
+            border:3px solid $primary;
+            border-radius:20px;
+            background-color: transparent;    
+            color:#000 !important;
+        }
+    }
+
 
 .central-pos{
     position: absolute !important;
